@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="windows-1251">
+    <title>Title</title>
+</head>
+<body style="max-width: 1050px; margin: 0 auto;">
+
+<link rel="stylesheet" href="assets/css/jquery.fancybox.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/cart.css">
+
+<div class="main">
+
+    <div style="width: 100%; overflow: auto; overflow-y: hidden;" id="main_block">
+
+        <div class="text-block text">
+
+
+            <script src="/local/templates/.default/components/afonya/saleex.basket.basket/.default/script.js"
+                    type="text/javascript"></script>
+
+            <div id="basket_form_container">
+                <div id="basket-errors"></div>
+                <div class="basket-errors  js-global-qu-warn">С момента добавления товаров в корзину, обновилась
+                    информация по остаткам. Обратите внимание, остаток некоторых товаров (отмечены <img
+                        src="/images/al.png" width="14" height="14"/>) меньше чем добавлено в корзину.<br/>Для
+                    оформления заказа необходимо уменьшить количество такого товара.
+                </div>
+                <form method="post" action="/personal/cart/" name="basket_form" id="basket_form">
+                    <div class="bx_ordercart">
+                        <div id="basket_items_list">
+                            <div class="bx_ordercart_order_table_container js-ordercart_order_table_container">
+                                <!--                                <table class="available">-->
+                                <!--                                    <thead>-->
+                                <!--                                    <tr>-->
+                                <!--                                        <td class="margin"></td>-->
+                                <!--                                        <td class="item" colspan="2">Товары</td>-->
+                                <!--                                        <td class="quantity">Количество</td>-->
+                                <!--                                        <td class="price">Цена<br/>без скидки</td>-->
+                                <!--                                        <td class="price">Скидка</td>-->
+                                <!--                                        <td class="price">Цена<br/>со скидкой</td>-->
+                                <!--                                        <td class="price">Стоимость<br/>со скидкой</td>-->
+                                <!--                                        <td class="bonuses">Бонусы</td>-->
+                                <!--                                        <td class="custom"></td>-->
+                                <!--                                        <td class="margin"></td>-->
+                                <!--                                    </tr>-->
+                                <!--                                    </thead>-->
+
+                                <!--                                    <tbody id="lines-wrap">-->
+                                <!--                                    <tr id="tr-i-" class="tr-wrapper">-->
+                                <!--                                        <td class="margin"></td>-->
+
+                                <!--                                    </tr>-->
+
+                                <!--                                    <tr class="tr-wrapper js-tr-wrapper">-->
+                                <!--                                        <td class="margin"></td>-->
+                                <!--                                        <td class="itemphoto">-->
+                                <!--                                            <div class="bx_ordercart_photo_container">-->
+
+                                <!--                                                <a href="/Vanna-Chugunnaya-Roca-CONTINENTAL-170x70-s-Protivoskolzyashchim-Pokrytiem-21291100R/">-->
+
+                                <!--                                                    <div class="bx_ordercart_photo"-->
+                                <!--                                                         style="background-image:url('assets/img/cart-item1.png')"></div>-->
+                                <!--                                                </a>-->
+                                <!--                                            </div>-->
+                                <!--                                        </td>-->
+                                <!--                                        <td class="item">-->
+                                <!--                                            <h2 class="bx_ordercart_itemtitle">-->
+                                <!--                                                <a href="/Vanna-Chugunnaya-Roca-CONTINENTAL-170x70-s-Protivoskolzyashchim-Pokrytiem-21291100R/">-->
+                                <!--                                                    Ванна чугунная Roca CONTINENTAL 170х70 с противоскользящим покрытием-->
+                                <!--                                                    21291100R </a></h2>-->
+                                <!--                                            <div class="code">Код: 10501</div>-->
+                                <!--                                        </td>-->
+
+                                <!--                                        <td class="custom quantity">-->
+                                <!--                                            <div class="centered counter counter-wrapper">-->
+                                <!--                                                <input-->
+                                <!--                                                        type="number"-->
+                                <!--                                                        class="in-quantity simple"-->
+                                <!--                                                        min="0"-->
+                                <!--                                                        value="1"-->
+                                <!--                                                        data-kol="0"/>-->
+                                <!--                                            </div>-->
+                                <!--                                        </td>-->
+                                <!--                                        <td class="price price-wrapper noleftp">-->
+                                <!--                                            <div class="current_price">-->
+                                <!--                                                <label>-->
+                                <!--                                                    <input type="text" value="0">-->
+                                <!--                                                </label>-->
+                                <!--                                            </div>-->
+                                <!--                                        </td>-->
+                                <!--                                        <td class="price price-wrapper noleftp">-->
+                                <!--                                            <label>-->
+                                <!--                                                <input type="text" value="0">-->
+                                <!--                                                &#8381;-->
+                                <!--                                            </label>-->
+                                <!--                                            <br/>-->
+                                <!--                                            <label>-->
+                                <!--                                                <input type="text">-->
+                                <!--                                                %-->
+                                <!--                                            </label>-->
+                                <!--                                            <br/>-->
+                                <!--                                            <label>-->
+                                <!--                                                <input type="checkbox">-->
+                                <!--                                                Применить<br/>ко всем-->
+                                <!--                                            </label>-->
+                                <!--                                        </td>-->
+                                <!--                                        <td class="custom quantity">-->
+                                <!--                                            <div class="current_price">30 000,00</div>-->
+                                <!--                                        </td>-->
+                                <!--                                        <td class="custom addSUM sum">-->
+                                <!--                                            <div class="current_price">30 000,00</div>-->
+                                <!--                                        </td>-->
+                                <!--                                        <td class="price price-wrapper noleftp">-->
+                                <!--                                            <label>-->
+                                <!--                                                <input type="text" value="0">-->
+                                <!--                                                <div class="bonusIcon">&#8381;</div>-->
+                                <!--                                            </label>-->
+                                <!--                                            <br/>-->
+                                <!--                                            <label>-->
+                                <!--                                                <input type="text">-->
+                                <!--                                                %-->
+                                <!--                                            </label>-->
+                                <!--                                            <br/>-->
+                                <!--                                            <label>-->
+                                <!--                                                <input type="checkbox">-->
+                                <!--                                                Применить<br/>ко всем-->
+                                <!--                                            </label>-->
+                                <!--                                        </td>-->
+                                <!--                                        <td class="control">-->
+                                <!--                                            <a class="del"><img src="assets/img/new-delete.png" alt="delete"/></a>-->
+                                <!--                                        </td>-->
+                                <!--                                        <td class="margin"></td>-->
+                                <!--                                    </tr>-->
+
+                                <!--                                    <tr class="tr-wrapper js-tr-wrapper">-->
+                                <!--                                        <td class="margin"></td>-->
+                                <!--                                        <td class="itemphoto">-->
+                                <!--                                            <div class="bx_ordercart_photo_container">-->
+
+                                <!--                                                <a href="/Vanna-Chugunnaya-Roca-CONTINENTAL-170x70-s-Protivoskolzyashchim-Pokrytiem-21291100R/">-->
+
+                                <!--                                                    <div class="bx_ordercart_photo"-->
+                                <!--                                                         style="background-image:url('assets/img/cart-item1.png')"></div>-->
+                                <!--                                                </a>-->
+                                <!--                                            </div>-->
+                                <!--                                        </td>-->
+                                <!--                                        <td class="item">-->
+                                <!--                                            <h2 class="bx_ordercart_itemtitle">-->
+                                <!--                                                <a href="/Vanna-Chugunnaya-Roca-CONTINENTAL-170x70-s-Protivoskolzyashchim-Pokrytiem-21291100R/">-->
+                                <!--                                                    Ванна чугунная Roca CONTINENTAL 170х70 с противоскользящим покрытием-->
+                                <!--                                                    21291100R </a></h2>-->
+
+                                <!--                                            <div class="code">Код: 10501</div>-->
+
+                                <!--                                        </td>-->
+
+                                <!--                                        <td class="custom quantity">-->
+                                <!--                                            <div class="centered counter counter-wrapper">-->
+                                <!--                                                <input-->
+                                <!--                                                        type="number"-->
+                                <!--                                                        class="in-quantity simple"-->
+                                <!--                                                        min="0"-->
+                                <!--                                                        value="1"-->
+                                <!--                                                        data-kol="0"/>-->
+                                <!--                                            </div>-->
+                                <!--                                        </td>-->
+                                <!--                                        <td class="price price-wrapper noleftp">-->
+                                <!--                                            <div class="current_price">-->
+                                <!--                                                <label>-->
+                                <!--                                                    <input type="text" value="0">-->
+                                <!--                                                </label>-->
+                                <!--                                            </div>-->
+                                <!--                                        </td>-->
+                                <!--                                        <td class="price price-wrapper">-->
+                                <!--                                            <label>-->
+                                <!--                                                <input type="text" value="0">-->
+                                <!--                                                &#8381;-->
+                                <!--                                            </label>-->
+                                <!--                                            <br/>-->
+                                <!--                                            <label>-->
+                                <!--                                                <input type="text">-->
+                                <!--                                                %-->
+                                <!--                                            </label>-->
+                                <!--                                            <br/>-->
+                                <!--                                            <label>-->
+                                <!--                                                <input type="checkbox">-->
+                                <!--                                                Применить<br/>ко всем-->
+                                <!--                                            </label>-->
+                                <!--                                        </td>-->
+                                <!--                                        <td class="custom quantity">-->
+                                <!--                                            <div class="current_price">30 000,00</div>-->
+                                <!--                                        </td>-->
+                                <!--                                        <td class="custom addSUM sum">-->
+                                <!--                                            <div class="current_price">30 000,00</div>-->
+                                <!--                                        </td>-->
+                                <!--                                        <td class="price price-wrapper">-->
+                                <!--                                            <label>-->
+                                <!--                                                <input type="text" value="0">-->
+                                <!--                                                <div class="bonusIcon">&#8381;</div>-->
+                                <!--                                            </label>-->
+                                <!--                                            <br/>-->
+                                <!--                                            <label>-->
+                                <!--                                                <input type="text">-->
+                                <!--                                                %-->
+                                <!--                                            </label>-->
+                                <!--                                            <br/>-->
+                                <!--                                            <label>-->
+                                <!--                                                <input type="checkbox">-->
+                                <!--                                                Применить<br/>ко всем-->
+                                <!--                                            </label>-->
+                                <!--                                        </td>-->
+                                <!--                                        <td class="control">-->
+                                <!--                                            <a class="del"><img src="assets/img/new-delete.png" alt="delete"/></a>-->
+                                <!--                                        </td>-->
+                                <!--                                        <td class="margin"></td>-->
+                                <!--                                    </tr>-->
+
+
+                                <!--                                    </tbody>-->
+                                <!--                                    <tfoot>-->
+                                <!--                                    <tr>-->
+                                <!--                                        <td class="margin"></td>-->
+                                <!--                                        <td class="total__price" colspan="6">-->
+                                <!--                                            Итого: <span>54 109 руб.</span>-->
+                                <!--                                            &#8195;-->
+                                <!--                                            Скидка: <span>12 235 руб.</span>-->
+                                <!--                                        </td>-->
+                                <!--                                        <td class="total__bonuses" colspan="3">-->
+                                <!--                                            Бонусы: <span>12 235 руб.</span>-->
+                                <!--                                            <div class="bonusIcon">&#8381;</div>-->
+                                <!--                                            <span>(15%)</span>-->
+                                <!--                                        </td>-->
+                                <!--                                        <td class="margin"></td>-->
+                                <!--                                    </tr>-->
+                                <!--                                    </tfoot>-->
+                                <!--                                </table>-->
+                            </div>
+                            <div class="basket__cards">
+                                <!--                                <div class="basket__card">-->
+                                <!--                                    <label>Карта-->
+                                <!--                                        <select>-->
+                                <!--                                            <option value="">Дисконтная карта 4600100062968</option>-->
+                                <!--                                            <option value="">Скидочная карта 4600100062968</option>-->
+                                <!--                                            <option value="">Бонусная карта 4600100062968</option>-->
+                                <!--                                        </select>-->
+                                <!--                                    </label>-->
+                                <!--                                </div>-->
+                                <!--                                <div class="basket__cardDiscount">-->
+                                <!--                                    <label>Скидка-->
+                                <!--                                        <select>-->
+                                <!--                                            <option value="">20%</option>-->
+                                <!--                                            <option value="">25%</option>-->
+                                <!--                                        </select>-->
+                                <!--                                    </label>-->
+                                <!--                                </div>-->
+                                <!--                                <div class="basket__promokod">-->
+                                <!--                                    <label for="promokod">-->
+                                <!--                                        Промокод-->
+                                <!--                                    </label>-->
+                                <!--                                    <input id="promokod" type="text">-->
+                                <!--                                </div>-->
+                                <!--                                <div class="basket__buy">-->
+                                <!--                                    <a href="/personal/make/" class="js-add-order">-->
+                                <!--                                        <span class="span-button-wrap orange" style="width: 200px;float: right">-->
+                                <!--                                            <span class="span-button">-->
+                                <!--                                                <span>Перейти к оформлению</span>-->
+                                <!--                                            </span>-->
+                                <!--                                        </span>-->
+                                <!--                                    </a>-->
+                                <!--                                </div>-->
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="basket__modal" class="basket__modal" style="display: none">
+    <div class="basket__modal__text"></div>
+</div>
+
+<div id="discount__modal" class="discount__modal" style="display: none">
+    <p>При изменении вида скидки, текущие параметры будут сброшены. Подтвердить?</p>
+    <div class="discount__modal__buttons">
+        <a id="discount__modal__yes" href="#">Да</a>
+        <a id="discount__modal__no" href="#">Нет</a>
+    </div>
+</div>
+<script src="assets/js/jquery-3.4.1.min.js"></script>
+<script src="assets/js/jquery.fancybox.min.js"></script>
+<script src="assets/js/new-scripts.js"></script>
+
+</body>
+</html>

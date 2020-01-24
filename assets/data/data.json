@@ -1,0 +1,77 @@
+{
+    "status": "success",
+    "data": {
+        "client": {
+            "has_default_card": true,
+            "bonuses": true,
+            "cards": [
+                {
+                    "name": "1111111111111",
+                    "is_default_card": false,
+                    "discount": [
+                        {
+                            "percent": 20
+                        },
+                        {
+                            "percent": 25
+                        }
+                    ]
+                },
+                {
+                    "name": "2222222222222",
+                    "is_default_card": true,
+                    "discount": [
+                        {
+                            "percent": 10
+                        },
+                        {
+                            "percent": 5
+                        }
+                    ]
+                },
+                {
+                    "name": "3333333333333",
+                    "is_default_card": false,
+                    "discount": [
+                        {
+                            "percent": 2
+                        },
+                        {
+                            "percent": 3
+                        }
+                    ]
+                }
+            ]
+        },
+        "items": [
+            {
+                "id_product": 1,
+                "name": "Ванна чугунная Roca CONTINENTAL 170х70 с противоскользящим покрытием 21291100R",
+                "code": 10501,
+                "code_in_cart": 10,
+                "img_url": "assets/img/cart-item1.png",
+                "price": 30000.00,
+                "quantity": 10
+            },
+            {
+                "id_product": 2,
+                "name": "Ванна чугунная Roca CONTINENTAL 170х70 с противоскользящим покрытием 21291100R",
+                "code": 10502,
+                "code_in_cart": 11,
+                "img_url": "assets/img/cart-item1.png",
+                "price": 40000.00,
+                "quantity": 1
+            },
+            {
+                "id_product": 3,
+                "name": "Ванна чугунная Roca CONTINENTAL 170х70 с противоскользящим покрытием 21291100R",
+                "code": 10503,
+                "code_in_cart": 12,
+                "img_url": "assets/img/cart-item1.png",
+                "price": 60000.00,
+                "quantity": 15
+            }
+        ]
+    },
+    "errors": []
+}
