@@ -80,9 +80,9 @@ $(document).ready(function () {
             let tableContainer = $('.bx_ordercart_order_table_container');
 
             let bonusContainer = '';
-            if (isBonus) bonusContainer = '<td class="bonuses">Бонусы</td>';
+            if (isBonus) bonusContainer = '<td class="bonuses">Р‘РѕРЅСѓСЃС‹</td>';
 
-            let table = $('<table class="available"><thead><tr><td class="margin"></td><td class="item" colspan="2">Товары</td><td class="quantity">Количество</td><td class="price">Цена<br/>без скидки</td><td class="price">Скидка</td><td class="price">Цена<br/>со скидкой</td><td class="price">Стоимость<br/>со скидкой</td>' + bonusContainer + '<td class="custom"></td><td class="margin"></td></tr></thead><tbody id="lines-wrap"><tr id="tr-i-" class="tr-wrapper"><td class="margin"></td></tr></tbody><tfoot></tfoot></table>');
+            let table = $('<table class="available"><thead><tr><td class="margin"></td><td class="item" colspan="2">РўРѕРІР°СЂС‹</td><td class="quantity">РљРѕР»РёС‡РµСЃС‚РІРѕ</td><td class="price">Р¦РµРЅР°<br/>Р±РµР· СЃРєРёРґРєРё</td><td class="price">РЎРєРёРґРєР°</td><td class="price">Р¦РµРЅР°<br/>СЃРѕ СЃРєРёРґРєРѕР№</td><td class="price">РЎС‚РѕРёРјРѕСЃС‚СЊ<br/>СЃРѕ СЃРєРёРґРєРѕР№</td>' + bonusContainer + '<td class="custom"></td><td class="margin"></td></tr></thead><tbody id="lines-wrap"><tr id="tr-i-" class="tr-wrapper"><td class="margin"></td></tr></tbody><tfoot></tfoot></table>');
 
             tableContainer.append(table);
 
@@ -109,7 +109,7 @@ $(document).ready(function () {
 
                 itemPhoto = $('<td class="margin"></td><td class="itemphoto"><div class="bx_ordercart_photo_container"><a href="/Vanna-Chugunnaya-Roca-CONTINENTAL-170x70-s-Protivoskolzyashchim-Pokrytiem-21291100R/"><div class="bx_ordercart_photo"style="background-image:url(' + imgUrl + ')"></div></a></div></td>');
 
-                item = $('<td class="item"><h2 class="bx_ordercart_itemtitle"><a href="/Vanna-Chugunnaya-Roca-CONTINENTAL-170x70-s-Protivoskolzyashchim-Pokrytiem-21291100R/">' + name + '</a></h2><div class="code">Код: ' + code + '</div></td>');
+                item = $('<td class="item"><h2 class="bx_ordercart_itemtitle"><a href="/Vanna-Chugunnaya-Roca-CONTINENTAL-170x70-s-Protivoskolzyashchim-Pokrytiem-21291100R/">' + name + '</a></h2><div class="code">РљРѕРґ: ' + code + '</div></td>');
 
                 count = $('<td class="custom quantity"><div class="centered counter counter-wrapper"><input type="text" class="in-quantity simple" min="0" value="' + quantity + '" data-kol="0"/><div class="numbersControl"><a class="numbersControl-plus"><svg width="6" height="3"><polygon points="0,3 3,0 6,3" /></svg></a><a class="numbersControl-minus"><svg width="6" height="3"><polygon points="0,0 3,3 6,0" /></svg></a></div></div>');
 
@@ -128,7 +128,7 @@ $(document).ready(function () {
 
                     _priceWithDiscount = price.toFixed(2);
                 } else {
-                    discount = $('<td class="price price-wrapper noleftp"><label><input class="discountInput" type="text" value="0"> &#8381;</label><br/><label><input class="discountInput_percent" type="text" value="0"> %</label><br/><a class="acceptBtn discountInput_check" href="#">Применить %<br />ко всем</a></td>');
+                    discount = $('<td class="price price-wrapper noleftp"><label><input class="discountInput" type="text" value="0"> &#8381;</label><br/><label><input class="discountInput_percent" type="text" value="0"> %</label><br/><a class="acceptBtn discountInput_check" href="#">РџСЂРёРјРµРЅРёС‚СЊ %<br />РєРѕ РІСЃРµРј</a></td>');
 
                     _priceWithDiscount = (price).toFixed(2);
                 }
@@ -143,9 +143,9 @@ $(document).ready(function () {
 
                 if (isBonus) {
                     if (hasDefaultCard) {
-                        bonus = $('<td class="price price-wrapper noleftp"><label><input class="bonusInput" type="text" value="' + ((price * (jsonClient.cards[defaultCard].discount[0].percent / 100)) * quantity).toFixed(2) + '"> <div class="bonusIcon">&#8381; </div></label><br/><label><input class="bonusInput_percent" type="text" value="' + jsonClient.cards[defaultCard].discount[0].percent.toFixed(2) + '"> %</label><br/><a class="acceptBtn bonusInput_check" href="#">Применить %<br />ко всем</a></td>');
+                        bonus = $('<td class="price price-wrapper noleftp"><label><input class="bonusInput" type="text" value="' + ((price * (jsonClient.cards[defaultCard].discount[0].percent / 100)) * quantity).toFixed(2) + '"> <div class="bonusIcon">&#8381; </div></label><br/><label><input class="bonusInput_percent" type="text" value="' + jsonClient.cards[defaultCard].discount[0].percent.toFixed(2) + '"> %</label><br/><a class="acceptBtn bonusInput_check" href="#">РџСЂРёРјРµРЅРёС‚СЊ %<br />РєРѕ РІСЃРµРј</a></td>');
                     } else {
-                        bonus = $('<td class="price price-wrapper noleftp"><label><input class="bonusInput" type="text" value="0"> <div class="bonusIcon">&#8381; </div></label><br/><label><input class="bonusInput_percent" type="text" value="0"> %</label><br/><a class="acceptBtn bonusInput_check" href="#">Применить %<br />ко всем</a></td>');
+                        bonus = $('<td class="price price-wrapper noleftp"><label><input class="bonusInput" type="text" value="0"> <div class="bonusIcon">&#8381; </div></label><br/><label><input class="bonusInput_percent" type="text" value="0"> %</label><br/><a class="acceptBtn bonusInput_check" href="#">РџСЂРёРјРµРЅРёС‚СЊ %<br />РєРѕ РІСЃРµРј</a></td>');
                     }
                 }
 
@@ -174,25 +174,25 @@ $(document).ready(function () {
 
             let tfoot;
             if (isBonus) {
-                tfoot = $('<tr><td class="margin"></td><td class="total__price" colspan="' + colspan + '">Итого: <span class="total__price_without__span">' + total.toLocaleString(undefined, {minimumFractionDigits: 2}) + ' руб.</span>&#8195;Итого со скидкой: <span class="total__price__span">' + totalPrice.toLocaleString(undefined, {minimumFractionDigits: 2}) + ' руб.</span>&#8195;Скидка: <span class="total__price__discount__span">' + totalDiscount.toLocaleString(undefined, {minimumFractionDigits: 2}) + ' руб.</span></td><td class="total__bonuses" colspan="3">Бонусы: <span class="total__bonuses__span">' + totalBonus + ' руб.</span><div class="bonusIcon">&#8381;</div> <span class="total__bonuses__percent__span">(' + bonusPercent + '%)</spantotal__bonuses__span></td><td class="margin"></td></tr>');
+                tfoot = $('<tr><td class="margin"></td><td class="total__price" colspan="' + colspan + '">РС‚РѕРіРѕ: <span class="total__price_without__span">' + total.toLocaleString(undefined, {minimumFractionDigits: 2}) + ' СЂСѓР±.</span>&#8195;РС‚РѕРіРѕ СЃРѕ СЃРєРёРґРєРѕР№: <span class="total__price__span">' + totalPrice.toLocaleString(undefined, {minimumFractionDigits: 2}) + ' СЂСѓР±.</span>&#8195;РЎРєРёРґРєР°: <span class="total__price__discount__span">' + totalDiscount.toLocaleString(undefined, {minimumFractionDigits: 2}) + ' СЂСѓР±.</span></td><td class="total__bonuses" colspan="3">Р‘РѕРЅСѓСЃС‹: <span class="total__bonuses__span">' + totalBonus + ' СЂСѓР±.</span><div class="bonusIcon">&#8381;</div> <span class="total__bonuses__percent__span">(' + bonusPercent + '%)</spantotal__bonuses__span></td><td class="margin"></td></tr>');
             } else {
-                tfoot = $('<tr><td class="margin"></td><td class="total__price" colspan="' + colspan + '">Итого: <span class="total__price_without__span">' + total.toLocaleString(undefined, {minimumFractionDigits: 2}) + ' руб.</span>&#8195;Итого со скидкой: <span class="total__price__span">' + totalPrice.toLocaleString(undefined, {minimumFractionDigits: 2}) + ' руб.</span>&#8195;Скидка: <span class="total__price__discount__span">' + totalDiscount.toLocaleString(undefined, {minimumFractionDigits: 2}) + ' руб.</span></td></tr>');
+                tfoot = $('<tr><td class="margin"></td><td class="total__price" colspan="' + colspan + '">РС‚РѕРіРѕ: <span class="total__price_without__span">' + total.toLocaleString(undefined, {minimumFractionDigits: 2}) + ' СЂСѓР±.</span>&#8195;РС‚РѕРіРѕ СЃРѕ СЃРєРёРґРєРѕР№: <span class="total__price__span">' + totalPrice.toLocaleString(undefined, {minimumFractionDigits: 2}) + ' СЂСѓР±.</span>&#8195;РЎРєРёРґРєР°: <span class="total__price__discount__span">' + totalDiscount.toLocaleString(undefined, {minimumFractionDigits: 2}) + ' СЂСѓР±.</span></td></tr>');
             }
             $('.available tfoot').append(tfoot);
 
             let cardsContainer = $('.basket__cards');
 
-            promokod = $('<div class="basket__promokod"><label for="promokod">Промокод </label><input id="promokod" type="text"></div>');
+            promokod = $('<div class="basket__promokod"><label for="promokod">РџСЂРѕРјРѕРєРѕРґ </label><input id="promokod" type="text"></div>');
 
-            btnBuy = $('<div class="basket__buy"><a href="/personal/make/" class="js-add-order"><span class="span-button-wrap orange" style="width: 200px;float: right"><span class="span-button"><span>Перейти к оформлению</span></span></span></a></div>');
+            btnBuy = $('<div class="basket__buy"><a href="/personal/make/" class="js-add-order"><span class="span-button-wrap orange" style="width: 200px;float: right"><span class="span-button"><span>РџРµСЂРµР№С‚Рё Рє РѕС„РѕСЂРјР»РµРЅРёСЋ</span></span></span></a></div>');
 
             if (jsonClient.cards.length >= 1) {
                 if (!hasDefaultCard) {
-                    selectCards = $('<div class="basket__card"><label>Дисконтная карта <select id="selectCards" onmousedown="firstCard(); $(\':last-child\', this).remove(); this.onmousedown = null;"></select></label></div>');
-                    selectDiscount = $('<div class="basket__cardDiscount"><label>Вид скидки<select id="selectDiscount"></select></label></div>');
+                    selectCards = $('<div class="basket__card"><label>Р”РёСЃРєРѕРЅС‚РЅР°СЏ РєР°СЂС‚Р° <select id="selectCards" onmousedown="firstCard(); $(\':last-child\', this).remove(); this.onmousedown = null;"></select></label></div>');
+                    selectDiscount = $('<div class="basket__cardDiscount"><label>Р’РёРґ СЃРєРёРґРєРё<select id="selectDiscount"></select></label></div>');
                 } else {
-                    selectCards = $('<div class="basket__card"><label>Дисконтная карта <select id="selectCards"></select></label></div>');
-                    selectDiscount = $('<div class="basket__cardDiscount"><label>Вид скидки<select id="selectDiscount"></select></label></div>');
+                    selectCards = $('<div class="basket__card"><label>Р”РёСЃРєРѕРЅС‚РЅР°СЏ РєР°СЂС‚Р° <select id="selectCards"></select></label></div>');
+                    selectDiscount = $('<div class="basket__cardDiscount"><label>Р’РёРґ СЃРєРёРґРєРё<select id="selectDiscount"></select></label></div>');
                 }
             }
 
@@ -496,7 +496,7 @@ let priceWithoutDiscountBlur = function (index) {
     let innerPrice = priceWithoutDiscount.value;
 
     if (priceWithoutDiscount.value < minPrice[index]) {
-        fancyPrice('Цена не может быть ниже ', minPrice[index]);
+        fancyPrice('Р¦РµРЅР° РЅРµ РјРѕР¶РµС‚ Р±С‹С‚СЊ РЅРёР¶Рµ ', minPrice[index]);
     }
 
     if (priceWithoutDiscount.value <= minPrice[index]) {
@@ -505,7 +505,7 @@ let priceWithoutDiscountBlur = function (index) {
         $(bonuses).val(0);
         $(discountInput).val(0);
     } else if (priceWithoutDiscount.value > (jsonItems[index].price * MAX_K_PRICE)) {
-        fancyPrice('Цена не может быть выше ', jsonItems[index].price * MAX_K_PRICE);
+        fancyPrice('Р¦РµРЅР° РЅРµ РјРѕР¶РµС‚ Р±С‹С‚СЊ РІС‹С€Рµ ', jsonItems[index].price * MAX_K_PRICE);
         innerPrice = (jsonItems[index].price * MAX_K_PRICE);
         $(priceWithoutDiscount).val(innerPrice);
         $(bonuses).val(((priceWithoutDiscount.value - discountInput.value - minPrice[index]) * countContainer.value).toFixed(2));
@@ -675,7 +675,7 @@ let fancyPrice = function (text, price) {
         touch: false,
         beforeShow: function () {
             $('html').addClass('scroll-disable');
-            $('.basket__modal').text(text + parseInt(price).toLocaleString(undefined, {minimumFractionDigits: 2}) + ' руб.')
+            $('.basket__modal').text(text + parseInt(price).toLocaleString(undefined, {minimumFractionDigits: 2}) + ' СЂСѓР±.')
         },
         afterClose: function () {
             $('html').removeClass('scroll-disable');
@@ -693,7 +693,7 @@ let changeTotal = function () {
     for (let i = 0; i < totalPriceWithDiscountContainer.length; i++) {
         totalPrice += parseFloat($(totalPriceWithDiscountContainer[i]).text());
     }
-    $('.total__price__span').text(totalPrice.toLocaleString(undefined, {minimumFractionDigits: 2}) + ' руб.');
+    $('.total__price__span').text(totalPrice.toLocaleString(undefined, {minimumFractionDigits: 2}) + ' СЂСѓР±.');
 };
 
 let changeTotalDiscount = function () {
@@ -709,7 +709,7 @@ let changeTotalDiscount = function () {
         }
     }
 
-    $('.total__price__discount__span').text(totalDiscount.toLocaleString(undefined, {minimumFractionDigits: 2}) + ' руб.');
+    $('.total__price__discount__span').text(totalDiscount.toLocaleString(undefined, {minimumFractionDigits: 2}) + ' СЂСѓР±.');
 };
 
 let changeTotalBonuses = function () {
@@ -740,7 +740,7 @@ let changeTotalWithoutDiscount = function () {
         totalWithout += priceWithoutDiscount[i].value * count[i].value;
     }
 
-    $(totalPriceWithoutSpan).text(totalWithout.toLocaleString(undefined, {minimumFractionDigits: 2}) + ' руб.');
+    $(totalPriceWithoutSpan).text(totalWithout.toLocaleString(undefined, {minimumFractionDigits: 2}) + ' СЂСѓР±.');
 };
 
 /**
@@ -831,8 +831,8 @@ let changeDiscount = function () {
                             _totalDiscount += parseFloat($(discountContainer[i]).text()) * count[i].value;
                         }
 
-                        $(total__price__span).text(_totalWithDiscount.toLocaleString(undefined, {minimumFractionDigits: 2}) + ' руб.');
-                        $(total__price__discount__span).text(_totalDiscount.toLocaleString(undefined, {minimumFractionDigits: 2}) + ' руб.');
+                        $(total__price__span).text(_totalWithDiscount.toLocaleString(undefined, {minimumFractionDigits: 2}) + ' СЂСѓР±.');
+                        $(total__price__discount__span).text(_totalDiscount.toLocaleString(undefined, {minimumFractionDigits: 2}) + ' СЂСѓР±.');
                     }
 
                 } else {
